@@ -1,9 +1,10 @@
 import React from 'react'
+import HeaderJoly from '../../helper/HeaderJoly'
 
 const HomeJoly = () => {
   return (
     <section>
-        HomeJoly
+        <HeaderJoly />
     </section>
   )
 }
