@@ -1,9 +1,10 @@
 import React from 'react'
+import HeaderSyS from '../../helper/HeaderSyS'
 
 const ClientesSyS = () => {
   return (
     <section>
-        ClientesSyS
+        <HeaderSyS />
     </section>
   )
 }

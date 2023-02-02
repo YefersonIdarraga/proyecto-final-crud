@@ -15,7 +15,7 @@ import ProveedoresJoly from './layout/Joly/ProveedoresJoly'
 import ProductosJoly from './layout/Joly/ProductosJoly'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <HashRouter>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<Home />} errorElement={<Error />}></Route>
       <Route path='/home-sys' element={<HomeSyS />} errorElement={<Error />}></Route>

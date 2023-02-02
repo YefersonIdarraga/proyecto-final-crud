@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Referencia colores: https://mybrandnewlogo.com/es/generador-de-paleta-de-colores */
+/* Referencia paletas colores: https://mybrandnewlogo.com/es/generador-de-paleta-de-colores */
 :root{/* Colores Joly */
     --color1: #2f2c1a;
     --color2: #45683f;
@@ -15,28 +14,49 @@
     ---color4: #c18fc6;
     ---color5: #e5b0e5;
     }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
 }
-header, .menu {
+/* Header */
+header{
+    position: fixed;
+}
+
+header, .menu, .menusys {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    height: 30px;
+    height: 50px;
 }
 
-.list{
-    width: 80%;
+.menu{
+    background-color: var(--color2);
+}
+
+.menusys{
+    background-color: var(---color1);
+}
+
+.fa-sharp{
+    font-size: 30px;
+    color: white;
+    margin-left: 50px;
+}
+
+.list, .list2{
+    width: 60%;
+    height: 50px;
     padding: 10px;
+    font-size: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    background-color: var(--color2); 
 }
-
 
 ul{
     display: flex;
@@ -45,24 +65,133 @@ ul{
     list-style: none;
 }
 
-.menu li ul {
+.menu li ul, .menusys li ul {
     visibility: hidden;
     position: absolute;
+    font-size: 18px;
     padding-top: 8px;
     padding-bottom: 8px;
     top: 35px;
-    background-color: #45683f;
-    width: 115px;
+    background-color: var(--color2);
+    width: 120px;
     text-align: center;
     gap: 8px;
+    transition: .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
-.menu li:hover > ul{
+.menusys li ul{
+    background-color: var(---color1);
+}
+
+.menu li:hover > ul, .menusys li:hover > ul{
     visibility: visible;
+    transition: .3s ease-in-out;
 }
 
-.list a{
+.list a, .list2 a{
     text-decoration: none;
     color: white;
+    font-weight: 900;
 }
 
+.list li a:hover, .list2 li a:hover, .menu a i:hover, .menusys a i:hover{
+    color: rgb(172, 172, 172);
+}
+
+.socials{
+    width: 30%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.fa-brands:hover{
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+/* Home */
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(69, 104, 63) 0%, rgba(255, 189, 42) 35%, rgba(120, 111, 153) 100%);
+}
+
+.home a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-transform: uppercase;
+}
+
+.joly, .sys, .divisor{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.divisor{
+    height: 20%;
+    background: rgba(0, 0, 0, 0.411);
+}
+
+.sys{
+    height: 40%;
+    background: linear-gradient(180deg, var(---color2) 0%, var(---color4) 100%);
+    transition: .3s ease-in-out;
+}
+
+.sys:hover{
+    background: linear-gradient(180deg, var(---color1) 0%, var(---color5) 100%);
+    transition: .3s ease-in-out;
+    box-shadow: inset 0px 0px 50px 5px rgba(128, 128, 128, 0.582);
+}
+
+.joly{
+    height: 40%;
+    background: linear-gradient(180deg, var(--color2) 0%, var(--color3) 100%);
+    transition: .3s ease-in-out;
+}
+
+.joly:hover{
+    background: linear-gradient(180deg, var(--color2) 0%, var(--color4) 100%);
+    transition: .3s ease-in-out;
+    box-shadow: inset 0px 0px 50px 5px rgba(128, 128, 128, 0.582);
+}
+
+.joly-cont, .sys-cont{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.joly-cont p, .sys-cont p{
+    font-size: 15px;
+    color: black;
+    text-shadow: none;
+}
+
+.logos-home{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 50px;
+    box-shadow: 4px 4px 4px black;
+}
+
+.logos-home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
