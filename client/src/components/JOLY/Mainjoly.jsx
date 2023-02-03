@@ -1,6 +1,8 @@
 import React from "react";
 import GalleryHummus from "./GalleryHummus";
-import hummus from '../../assets/joly/hummus.jpg'
+import hummus from "../../assets/joly/hummus.jpg";
+import GalleryGuacamole from "./GalleryGuacamole";
+import guacamole from "../../assets/joly/guacamole.jpg";
 
 const Mainjoly = () => {
   return (
@@ -18,20 +20,22 @@ const Mainjoly = () => {
           significa garbanzo, su ingrediente principal.
         </p>
         <div className="hummus-par">
-        <img className="hummus-img" src={hummus} alt="" />
-        <p>
-          Esta es una preparación muy rápida, simplemente lleva garbanzos, una
-          pasta de ajonjolí o semillas de sésamo llamada tahini (tahina), aceite
-          de oliva, agua helada, ajo, zumo de limón, agua helada, sal y paparika
-          para decorar. Todos los ingredientes se mezclan en un procesador o
-          licuadora, hasta obtener una especie de puré fino y suave. Esta es la
-          receta básica pero hay muchas variaciones. Pueden darle su toque
-          personal con otras especias como comino, curry, queso feta, cilantro o
-          aguacate y para los amantes del picante, un poco de chile o chile
-          chipotle que le da color y toque ahumado.
-        </p><br />
+          <img className="hummus-img" src={hummus} alt="" />
+          <p>
+            Esta es una preparación muy rápida, simplemente lleva garbanzos, una
+            pasta de ajonjolí o semillas de sésamo llamada tahini (tahina),
+            aceite de oliva, agua helada, ajo, zumo de limón, agua helada, sal y
+            paparika para decorar. Todos los ingredientes se mezclan en un
+            procesador o licuadora, hasta obtener una especie de puré fino y
+            suave. Esta es la receta básica pero hay muchas variaciones. Pueden
+            darle su toque personal con otras especias como comino, curry, queso
+            feta, cilantro o aguacate y para los amantes del picante, un poco de
+            chile o chile chipotle que le da color y toque ahumado.
+          </p>
+          <br />
         </div>
-        <h2>Preparación</h2><br />
+        <h2>Preparación</h2>
+        <br />
         <p>
           Una de las recetas más ricas, saludables y se hace en pocos minutos.
           Perfecto para disfrutar con vegetales frescos, pan pita o chips. Para
@@ -40,38 +44,37 @@ const Mainjoly = () => {
           Salsas y dips Cocina: Arabe, <br />
           Mediterránea Palabra Clave: <br />
           hummus Porciones: 2 tazas. <br />
-        </p><br />
-        <h2>Ingredientes</h2><br />
+        </p>
+        <br />
+        <h2>Ingredientes</h2>
+        <br />
         <GalleryHummus />
         <br />
         <br />
         <h1>Guacamole</h1>
-        <p>
-          La receta de Guacamole es una de esas salsa para mojar o dip que nos
-          encanta preparar muchas noches para cenar. Este aperitivo tradicional
-          mexicano es delicioso y además muy nutritivo, las virtudes del
-          aguacate y del resto de ingredientes que lo componen, se encuentran
-          dentro de los alimentos que deben incluirse en nuestra dieta diaria,
-          cosa aparte es el picante, que de vez en cuando tampoco va mal.
+        <div className="hummus-par">
+          <p>
+            La receta de Guacamole es una de esas salsa para mojar o dip que nos
+            encanta preparar muchas noches para cenar. Este aperitivo
+            tradicional mexicano es delicioso y además muy nutritivo, las
+            virtudes del aguacate y del resto de ingredientes que lo componen,
+            se encuentran dentro de los alimentos que deben incluirse en nuestra
+            dieta diaria, cosa aparte es el picante, que de vez en cuando
+            tampoco va mal.
+            <br />
+            Hay muchas variantes de la receta de guacamole, esta es la que
+            habitualmente hacemos nosotros, por eso invitamos a nuestros
+            lectores mexicanos a que nos rectifiquen o nos ilustren con sus
+            recetas y consejos para hacer guacamole.
+          </p>
           <br />
-          Hay muchas variantes de la receta de guacamole, esta es la que
-          habitualmente hacemos nosotros, por eso invitamos a nuestros lectores
-          mexicanos a que nos rectifiquen o nos ilustren con sus recetas y
-          consejos para hacer guacamole.
-        </p><br />
-        <h2>Ingredientes</h2><br />
-        <ul>
-          <li>2 aguacates en su punto</li>
-          <li>1 tomate maduro</li>
-          <li>1 cebolla tierna grande o dos pequeñas</li>
-          <li>unas ramitas de cilantro</li>
-          <li>zumo de limón</li>
-          <li>chile</li>
-          <li>pimienta negra</li>
-          <li>jalapeño</li>
-          <li>sal.</li>
-        </ul><br />
-        <h2>Preparación</h2><br />
+          <img className="hummus-img" src={guacamole} alt="guacamole" />
+        </div>
+        <h2>Ingredientes</h2>
+        <br />
+        <GalleryGuacamole />
+        <br />
+        <h2>Preparación</h2>
         <p>
           Pela el tomate y córtalo en daditos retirando las semillas. Ponlo en
           un cuenco junto a los aguacates pelados y troceados, riega con unas
@@ -82,6 +85,19 @@ const Mainjoly = () => {
           mezcla bien. Hay quien deja el hueso del aguacate en el centro del
           guacamole para evitar que se oxide y se ennegrezca, a nosotros no nos
           da tiempo.
+        </p>
+        <h1>Misión</h1>
+        <p>
+          Ofrecer una experiencia culinaria única y sostenible a nuestros
+          clientes, combinando los mejores ingredientes orgánicos y locales para
+          crear platos vegetarianos de guacamole y hummus de alta calidad.
+        </p>
+        <h1>Visión</h1>
+        <p>
+          Ser reconocidos como líderes en la industria culinaria vegetariana,
+          inspirando a la comunidad a adoptar un estilo de vida más saludable y
+          sostenible a través de la degustación de nuestros platos de guacamole
+          y hummus.
         </p>
       </div>
     </section>
