@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import guacamole from '../assets/joly/guacamole.jpg'
-import hummus from '../assets/joly/hummus.jpg'
 import cuidadoUñas from '../assets/sys/cuidado-uñas.jpg'
 
 const Home = () => {

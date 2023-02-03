@@ -1,4 +1,5 @@
 import React from "react";
+import Gallerysys from "./Gallerysys";
 
 const Mainsys = () => {
   return (
@@ -16,6 +17,7 @@ const Mainsys = () => {
           de belleza y, sin embargo, muchas veces descuidamos este punto tan
           esencial de nuestro aspecto.
         </p>
+        <Gallerysys />
         <h2>Todo sobre el cuidado de las uñas </h2>
         <p>Los pacientes que sufren diabetes son sin duda alguna los que más
         encarecidamente necesitan estar al tanto del aspecto de sus uñas y

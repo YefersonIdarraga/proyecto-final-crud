@@ -14,18 +14,19 @@
     ---color4: #c18fc6;
     ---color5: #e5b0e5;
     }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
 }
+
 /* Header */
+
 header{
     position: fixed;
+    z-index: 1;
 }
-
 header, .menu, .menusys {
     display: flex;
     align-items: center;
@@ -33,21 +34,17 @@ header, .menu, .menusys {
     width: 100%;
     height: 50px;
 }
-
 .menu{
     background-color: var(--color2);
 }
-
 .menusys{
     background-color: var(---color1);
 }
-
 .fa-sharp{
     font-size: 30px;
     color: white;
     margin-left: 50px;
 }
-
 .list, .list2{
     width: 60%;
     height: 50px;
@@ -57,14 +54,12 @@ header, .menu, .menusys {
     align-items: center;
     justify-content: space-evenly;
 }
-
 .menu ul, .menusys ul, .list ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
 }
-
 .menu li ul, .menusys li ul {
     visibility: hidden;
     position: absolute;
@@ -80,26 +75,21 @@ header, .menu, .menusys {
     display: flex;
     flex-direction: column;
 }
-
 .menusys li ul{
     background-color: var(---color1);
 }
-
 .menu li:hover > ul, .menusys li:hover > ul{
     visibility: visible;
     transition: .3s ease-in-out;
 }
-
 .list a, .list2 a{
     text-decoration: none;
     color: white;
     font-weight: 900;
 }
-
 .list li a:hover, .list2 li a:hover, .menu a i:hover, .menusys a i:hover{
     color: rgb(172, 172, 172);
 }
-
 .socials{
     width: 30%;
     font-size: 25px;
@@ -108,12 +98,13 @@ header, .menu, .menusys {
     justify-content: flex-end;
     gap: 15px;
 }
-
 .fa-brands:hover{
     color: rgb(172, 172, 172);
     cursor: pointer;
 }
+
 /* Home */
+
 .home{
     width: 100%;
     height: 100vh;
@@ -121,14 +112,12 @@ header, .menu, .menusys {
     flex-direction: column;
     background: linear-gradient(180deg, rgba(69, 104, 63) 0%, rgba(255, 189, 42) 35%, rgba(120, 111, 153) 100%);
 }
-
 .home a{
     text-decoration: none;
     color: white;
     text-shadow: 3px 3px 3px black;
     text-transform: uppercase;
 }
-
 .joly, .sys, .divisor{
     height: 40%;
     display: flex;
@@ -138,49 +127,41 @@ header, .menu, .menusys {
     color: white;
     text-shadow: 3px 3px 3px black;
 }
-
 .divisor{
     height: 20%;
     background: rgba(0, 0, 0, 0.411);
 }
-
 .sys{
     height: 40%;
     background: linear-gradient(180deg, var(---color2) 0%, var(---color4) 100%);
     transition: .3s ease-in-out;
 }
-
 .sys:hover{
     background: linear-gradient(180deg, var(---color1) 0%, var(---color5) 100%);
     transition: .3s ease-in-out;
     box-shadow: inset 0px 0px 50px 5px rgba(128, 128, 128, 0.582);
 }
-
 .joly{
     height: 40%;
     background: linear-gradient(180deg, var(--color2) 0%, var(--color3) 100%);
     transition: .3s ease-in-out;
 }
-
 .joly:hover{
     background: linear-gradient(180deg, var(--color2) 0%, var(--color4) 100%);
     transition: .3s ease-in-out;
     box-shadow: inset 0px 0px 50px 5px rgba(128, 128, 128, 0.582);
 }
-
 .joly-cont, .sys-cont{
     height: 40%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .joly-cont p, .sys-cont p{
     font-size: 15px;
     color: black;
     text-shadow: none;
 }
-
 .logos-home{
     width: 100px;
     height: 100px;
@@ -189,36 +170,35 @@ header, .menu, .menusys {
     margin-right: 50px;
     box-shadow: 4px 4px 4px black;
 }
-
 .logos-home img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/*main sys  */
+/*Main sys  */
 
 .mainsys{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 50px;
 }
 .cont-main{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
 }
-h2{
-    color: #0f344e;
+.mainsys h2{
+    color: var(---color2);
     text-decoration: underline;
     text-align: center;
     padding: 20px;
 }
-p{
+.mainsys p{
     text-align: justify;
     margin: 10px;
 }
@@ -226,22 +206,83 @@ p{
     margin-left: 35px;
 }
 
-/*main joly  */
+/*Main joly  */
 
 .mainjoly{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 50px;  
 }
 .mainjoly ul{
     margin-left: 35px;
 }
-h1{
+.mainjoly h1{
     color: #0f344e;
     text-decoration: underline;
     text-align: center;
     padding: 20px;
     font-size: xx-large;
+    margin-top: 50px; 
+}
+
+/* HomeSyS */
+
+.container-sys{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(64, 78, 113, 0.548) 0%, rgb(194, 143, 199, 0.548) 50%, rgb(229, 176, 229, 0.548) 100%);
+    
+}
+.home-sys{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.add{
+    padding: 10px;
+    margin-top: 200px;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    border: 2px solid var(---color4);
+    border-radius: 10px;
+}
+.div-add{
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid var(---color5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.div-add img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Gallery */
+.gallery{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.gallery img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    z-index: 0;
+}
+.gallery img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
