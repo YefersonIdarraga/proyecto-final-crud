@@ -58,10 +58,10 @@ header, .menu, .menusys {
     justify-content: space-evenly;
 }
 
-ul{
+.menu ul, .menusys ul, .list ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
 }
 
@@ -194,4 +194,54 @@ ul{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*main sys  */
+
+.mainsys{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.cont-main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+h2{
+    color: #0f344e;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+}
+p{
+    text-align: justify;
+    margin: 10px;
+}
+.mainsys ul{
+    margin-left: 35px;
+}
+
+/*main joly  */
+
+.mainjoly{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;  
+}
+.mainjoly ul{
+    margin-left: 35px;
+}
+h1{
+    color: #0f344e;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
 }
