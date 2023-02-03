@@ -4,7 +4,7 @@ import HeaderJoly from '../../helper/HeaderJoly'
 
 const HomeJoly = () => {
   return (
-    <section>
+    <section className='container-joly'>
         <HeaderJoly />
         <Mainjoly />
     </section>

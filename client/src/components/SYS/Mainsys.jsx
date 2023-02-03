@@ -4,9 +4,8 @@ import Gallerysys from "./Gallerysys";
 const Mainsys = () => {
   return (
     <section className="mainsys">
-      <div className="cont-main">
+      <div className="cont-mainsys">
         <h2>La importancia de el cuidado de las uñas </h2>
-
         <p>
           Las manos, y con ellas también las uñas, son nuestra primera carta de
           presentación ante los demás en muchísimas situaciones: en un saludo
@@ -19,20 +18,22 @@ const Mainsys = () => {
         </p>
         <Gallerysys />
         <h2>Todo sobre el cuidado de las uñas </h2>
-        <p>Los pacientes que sufren diabetes son sin duda alguna los que más
-        encarecidamente necesitan estar al tanto del aspecto de sus uñas y
-        cuidarlas al máximo, ya que está directamente ligado a su salud. De
-        hecho, se estima que un tercio de los diabéticos tiene hongos en las
-        uñas de los pies, uno de los síntomas del pie diabético, y que se
-        manifiesta con uñas engrosadas y con un color encarnado que puede llevar
-        a otros problemas más graves si no se trata. Pero aunque el cuidado de
-        las uñas es fundamental en los pacientes diabéticos, el resto de las
-        personas, tanto adultos como niños, tampoco deben descuidarlas para
-        mantener una buena imagen estética y evitar a su vez contraer
-        infecciones u otros problemas de salud derivados de ello. Para gozar de
-        una buena salud en manos y pies es necesario:</p>
+        <p>
+          Los pacientes que sufren diabetes son sin duda alguna los que más
+          encarecidamente necesitan estar al tanto del aspecto de sus uñas y
+          cuidarlas al máximo, ya que está directamente ligado a su salud. De
+          hecho, se estima que un tercio de los diabéticos tiene hongos en las
+          uñas de los pies, uno de los síntomas del pie diabético, y que se
+          manifiesta con uñas engrosadas y con un color encarnado que puede
+          llevar a otros problemas más graves si no se trata. Pero aunque el
+          cuidado de las uñas es fundamental en los pacientes diabéticos, el
+          resto de las personas, tanto adultos como niños, tampoco deben
+          descuidarlas para mantener una buena imagen estética y evitar a su vez
+          contraer infecciones u otros problemas de salud derivados de ello.
+          Para gozar de una buena salud en manos y pies es necesario:
+        </p>
         <ul>
-            <br />
+          <br />
           <li>
             Hidratar las uñas a diario con cremas ricas en aceite de almendras
             con vitamina A. De esta manera evitaríamos la formación y aparición
@@ -95,12 +96,12 @@ const Mainsys = () => {
             se laminen.
           </li>
         </ul>
-        <h2>MISIÓN</h2>
+        <h2>Misión</h2>
         <p>
           Brindar un servicio de alta calidad y personalizado para mantener la
           salud y belleza de las uñas de nuestros clientes.
         </p>
-        <h2>VISIÓN</h2>
+        <h2>Visión</h2>
         <p>
           Ser reconocidos como líderes en el cuidado de las uñas y ser la
           primera opción en el mercado para quienes buscan un trato profesional

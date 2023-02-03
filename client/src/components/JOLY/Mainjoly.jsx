@@ -1,9 +1,11 @@
 import React from "react";
+import GalleryHummus from "./GalleryHummus";
+import hummus from '../../assets/joly/hummus.jpg'
 
 const Mainjoly = () => {
   return (
     <section className="mainjoly">
-      <div className="cont-main">
+      <div className="cont-mainjoly">
         <h1>Hummus</h1>
         <p>
           Hasta hace un tiempo, el Hummus era un dip poco conocido en los países
@@ -15,7 +17,8 @@ const Mainjoly = () => {
           Saudita, Turquía, Israel y Grecia, entre otros. Hummus en árabe
           significa garbanzo, su ingrediente principal.
         </p>
-        <img src="" alt="" />
+        <div className="hummus-par">
+        <img className="hummus-img" src={hummus} alt="" />
         <p>
           Esta es una preparación muy rápida, simplemente lleva garbanzos, una
           pasta de ajonjolí o semillas de sésamo llamada tahini (tahina), aceite
@@ -26,8 +29,9 @@ const Mainjoly = () => {
           personal con otras especias como comino, curry, queso feta, cilantro o
           aguacate y para los amantes del picante, un poco de chile o chile
           chipotle que le da color y toque ahumado.
-        </p>
-        <h2>Preparación</h2>
+        </p><br />
+        </div>
+        <h2>Preparación</h2><br />
         <p>
           Una de las recetas más ricas, saludables y se hace en pocos minutos.
           Perfecto para disfrutar con vegetales frescos, pan pita o chips. Para
@@ -36,19 +40,9 @@ const Mainjoly = () => {
           Salsas y dips Cocina: Arabe, <br />
           Mediterránea Palabra Clave: <br />
           hummus Porciones: 2 tazas. <br />
-        </p>
-        <h2>Ingredientes</h2>
-        <ul>
-          <li>1 lata garbanzos 15.5 oz. (439 gr.) colados</li>
-          <li>1 taza tahini light</li>
-          <li>7 cucharadas agua helada ó más si hace falta</li>
-          <li>1 cda aceite de oliva virgen light</li>
-          <li>1 limón amarillo (zumo)</li>
-          <li>2 dientes ajo sin piel enteros o cortados</li>
-          <li>1 1/4 cucharaditas sal regular o al gusto</li>
-          <li>pizca paprika picante o ahumada (opcional) para adornar</li>
-        </ul>
-        <img src="" alt="" />
+        </p><br />
+        <h2>Ingredientes</h2><br />
+        <GalleryHummus />
         <br />
         <br />
         <h1>Guacamole</h1>
@@ -64,8 +58,8 @@ const Mainjoly = () => {
           habitualmente hacemos nosotros, por eso invitamos a nuestros lectores
           mexicanos a que nos rectifiquen o nos ilustren con sus recetas y
           consejos para hacer guacamole.
-        </p>
-        <h2>Ingredientes</h2>
+        </p><br />
+        <h2>Ingredientes</h2><br />
         <ul>
           <li>2 aguacates en su punto</li>
           <li>1 tomate maduro</li>
@@ -76,8 +70,8 @@ const Mainjoly = () => {
           <li>pimienta negra</li>
           <li>jalapeño</li>
           <li>sal.</li>
-        </ul>
-        <h2>Preparación</h2>
+        </ul><br />
+        <h2>Preparación</h2><br />
         <p>
           Pela el tomate y córtalo en daditos retirando las semillas. Ponlo en
           un cuenco junto a los aguacates pelados y troceados, riega con unas
