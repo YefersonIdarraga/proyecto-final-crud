@@ -1,6 +1,7 @@
 import React from 'react'
 import Adds from '../../components/SYS/Adds'
 import Mainsys from '../../components/SYS/Mainsys'
+import FooterSyS from '../../helper/FooterSyS'
 import HeaderSyS from '../../helper/HeaderSyS'
 
 const HomeSyS = () => {
@@ -11,6 +12,7 @@ const HomeSyS = () => {
       <Mainsys />
       <Adds />
     </section>
+      <FooterSyS />
     </section>
   )
 }

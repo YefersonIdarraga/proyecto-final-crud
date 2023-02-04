@@ -348,3 +348,89 @@ header, .menu, .menusys {
     opacity: 1;
     filter: contrast(120%);
 }
+/* Footer */
+.footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid var(--color2);
+    margin-top: 150px;
+    background: #2f2c1aa2;
+}
+.logo-hummusG{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-hummusG h1{
+    font-size: 40px;
+    color: var(--color1);
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 10px;
+}
+.hummus-guacamole{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px black;
+}
+.hummus-guacamole img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.integrantes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.integrantes h1, .referencias h1{
+    font-size: 30px;
+    color: var(--color1);
+    text-shadow: 1px 1px 1px black;
+}
+.integrantes ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.referencias{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.referencias ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.referencias a{
+    color: black;
+}
+.referencias a:hover{
+    color: white;
+}
+.sfooter{
+    width: 100px;
+}
+.separador{
+    background-color: var(--color1);
+    width: 2px;
+    height: 80%;
+}
+/* Footer sys */
+.footersys{
+    background: #786f99a8;
+    border-color: var(---color4);
+}
+.footersys h1{
+    color: var(---color1);
+}
+.separadorsys{
+    background: var(---color4);
+}
