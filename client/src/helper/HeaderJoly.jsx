@@ -25,7 +25,9 @@ const HeaderJoly = () => {
             </ul>
           </li>
         </ul>
-        <Socials />
+        <div className="container-socials">
+          <Socials />
+        </div>
       </nav>
     </header>
   );

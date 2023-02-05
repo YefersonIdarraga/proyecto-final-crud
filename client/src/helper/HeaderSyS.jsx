@@ -25,7 +25,9 @@ const HeaderSyS = () => {
             </ul>
           </li>
         </ul>
-        <Socials />
+        <div className="container-socials">
+          <Socials />
+        </div>
       </nav>
     </header>
   )

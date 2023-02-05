@@ -108,8 +108,13 @@ header, .menu, .menusys {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-.socials{
+.container-socials{
     width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.socials{
+    width: 100px;
     font-size: 25px;
     color: white;
     display: flex;
@@ -415,9 +420,6 @@ header, .menu, .menusys {
 .referencias a:hover{
     color: white;
 }
-.sfooter{
-    width: 100px;
-}
 .separador{
     background-color: var(--color1);
     width: 2px;
@@ -433,4 +435,49 @@ header, .menu, .menusys {
 }
 .separadorsys{
     background: var(---color4);
+}
+/* Modal */
+.modal{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    place-items: center;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.modal-container{
+    width: 50%;
+    min-width: 400px;
+    position: relative;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+.modalClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Clientes Joly */
+.container-clientesj{
+    padding-top: 60px;
+}
+.add-clientB{
+    background: var(--color3);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color5);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.205);
+    transition: .3s ease-in-out;
+}
+.add-clientB:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }
