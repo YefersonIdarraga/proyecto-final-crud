@@ -3,7 +3,7 @@ import dataBase from "../config/conexionDatabase.js";
 
 const Cliente = dataBase.define('clientes', {
   documento: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER
   },
   nombre: {
     type: Sequelize.STRING
@@ -15,19 +15,16 @@ const Cliente = dataBase.define('clientes', {
     type: Sequelize.INTEGER
   },
   correo: {
-    type: Sequelize.DATE
-  },
-  correo: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   },
   barrio: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   direccion: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   foto: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   }
 })
 

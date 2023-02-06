@@ -13,6 +13,8 @@ import ProductosSyS from './layout/SyS/ProductosSyS'
 import ClientesJoly from './layout/Joly/ClientesJoly'
 import ProveedoresJoly from './layout/Joly/ProveedoresJoly'
 import ProductosJoly from './layout/Joly/ProductosJoly'
+import EditarCliente from './components/JOLY/Clientes/EditarCliente'
+import AñadirCliente from './components/JOLY/Clientes/AñadirCliente'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>
@@ -26,6 +28,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/clientes-joly' element={<ClientesJoly />} errorElement={<Error />}></Route>
       <Route path='/proveedores-joly' element={<ProveedoresJoly />} errorElement={<Error />}></Route>
       <Route path='/productos-joly' element={<ProductosJoly />} errorElement={<Error />}></Route>
+      <Route path='/añadir-clientej' element={<AñadirCliente />}></Route>
+      <Route path='/editar-clientej/:id' element={<EditarCliente />}></Route>
     </Routes>
   </HashRouter>
 )

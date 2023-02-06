@@ -1,51 +1,69 @@
-import React from 'react'
-import { useState } from 'react'
-import AñadirCliente from '../../components/JOLY/AñadirCliente'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import HeaderJoly from '../../helper/HeaderJoly'
-import Modal from '../Modal'
+const urlClientes = 'http://localhost:3100/clientes'
 
 
 const ClientesJoly = () => {
-  const [mostrar, setMostrar] = useState(false)
+  const [clientes, setClientes] = useState([])
+
+  useEffect(() =>{
+    mostrarClientes()
+  }, [])
+
+  const mostrarClientes = async () => {
+    const res = await axios.get(urlClientes)
+    setClientes(res.data)
+  }
+
+  const eliminarCliente = async (id) => {
+    await axios.delete(`${urlClientes}/${id}`)
+    mostrarClientes()
+  }
+
   return (
     <section>
         <HeaderJoly />
         <div className='container-clientesj'>
           <div className='add-client'>
-              <button className='add-clientB' onClick={()=> setMostrar(true)}>Añadir cliente</button>
-            <Modal isOpen={mostrar} onClose={()=> setMostrar(false)}>
-            <p>
-              <AñadirCliente />
-            </p>
-            </Modal>
+              <Link className='add-clientB' to={'/añadir-clientej'}>Añadir cliente</Link>
           </div>
           <div className="table-clientesj">
             <h1>Clientes Joly</h1>
             <table>
               <thead>
-                <th>Nombre</th>
-                <th>Documento</th>
-                <th>Apellido</th>
-                <th>Telefono</th>
-                <th>Correo</th>
-                <th>Barrio</th>
-                <th>Dirección</th>
-                <th>Foto</th>
-                <th></th>
+                <tr>
+                  <th>Documento</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Telefono</th>
+                  <th>Correo</th>
+                  <th>Barrio</th>
+                  <th>Dirección</th>
+                  <th>Foto</th>
+                  <th></th>
+                </tr>
               </thead>
               <tbody>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <button className='trash'><i class="fa-solid fa-trash"></i></button>
-                  <button className='edit-client'><i class="fa-solid fa-user-pen"></i></button>
-                </td>
+                {clientes.map((cliente) => (
+                <tr>
+                  <td>{cliente.documento}</td>
+                  <td>{cliente.nombre}</td>
+                  <td>{cliente.apellido}</td>
+                  <td>{cliente.telefono}</td>
+                  <td>{cliente.correo}</td>
+                  <td>{cliente.barrio}</td>
+                  <td>{cliente.direccion}</td>
+                  <td>
+                    <img src={`${cliente.foto}`} alt="Foto" />
+                  </td>
+                  <td>
+                    <button className='trash' onClick={() =>eliminarCliente(cliente.id)}><i class="fa-solid fa-trash"></i></button>
+                    <Link className='edit-client' to={`/editar-clientej/${cliente.id}`}><i class="fa-solid fa-user-pen"></i></Link>
+                  </td>
+                </tr> 
+                ))} 
               </tbody>
             </table>
           </div>

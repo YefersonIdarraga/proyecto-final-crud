@@ -15,7 +15,7 @@ const Producto = dataBase.define('productos', {
     type: Sequelize.INTEGER
   },
   imagenProducto: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   }
 })
 

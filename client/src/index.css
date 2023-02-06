@@ -472,14 +472,15 @@ header, .menu, .menusys {
 /* Clientes Joly */
 .container-clientesj{
     padding-top: 60px;
+    padding-left: 50px;
     width: 100%;
     height: 100vh;
     background: var(--color5);
 }
 .add-clientB{
     position: fixed;
-    right: 10px;
-    top: 50%;
+    right: 30px;
+    top: 90px;
     background: var(--color3);
     padding: 10px;
     border-radius: 10px;
@@ -490,28 +491,59 @@ header, .menu, .menusys {
     text-shadow: 2px 2px 2px black;
     box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.205);
     transition: .3s ease-in-out;
+    text-decoration: none;
 }
 .add-clientB:hover{
     box-shadow: none;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
-/* AñadirCliente */
+/* AñadirCliente Joly */
+.container-formClientJ{
+    width: 100%;
+    height: 100vh;
+    background: var(--color5);
+}
 .form-add-client{
-    width: 300px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form-add-client form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 40%;
 }
-.form-add-client input{
+.div-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputJ{
     padding: 10px;
+    width: 100%;
     font-size: 17px;
     outline: none;
     border: none;
     border-bottom: 1px solid black;
+    background: var(--color5);
+}
+.fa-check{
+    color: green;
+    font-size: 20px;
+}
+.fa-circle-exclamation{
+    color: rgb(155, 0, 0);
+    font-size: 20px;
+}
+.incorrecto{
+    background-color: red;
+}
+.correcto{
+    background-color: green;
 }
 .form-add-client input:focus{
     border-color: var(--color3);
@@ -524,11 +556,33 @@ header, .menu, .menusys {
     border-radius: 10px;
     box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.205);
     transition: .3s ease-in-out;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    border: none;
 }
 .registrarJ:hover{
     box-shadow: none;
     transition: .3s ease-in-out;
-    color: gray;
+    cursor: pointer;
+}
+.cancelarJ{
+    text-decoration: none;
+    color: white;
+    background: rgb(112, 0, 0);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.205);
+    text-shadow: 1px 1px 1px black;
+    transition: .3s ease-in-out;
+}
+.cancelarJ:hover{
+    box-shadow: none;
+    transition: .3s ease-in-out;
     cursor: pointer;
 }
 /* Table clientes Joly */
@@ -557,15 +611,13 @@ header, .menu, .menusys {
     padding: 5px;
     text-align: center;
 }
-.table-clientesj button{
-    background: none;
-    border: none;
-    font-size: 20px;
-    margin-left: 5px;
-}
 .edit-client{
     color: rgb(47, 44, 26, 0.8);
     transition: .3s ease-in-out;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
 }
 .edit-client:hover{
     color: var(--color1);
@@ -573,6 +625,10 @@ header, .menu, .menusys {
 .trash{
     color: rgb(141, 0, 0, 0.8);
     transition: .3s ease-in-out;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
 }
 .trash:hover{
     color: rgb(141, 0, 0);
@@ -581,4 +637,7 @@ header, .menu, .menusys {
     cursor: pointer;
     text-shadow: none;
     transition: .3s ease-in-out;
+}
+.table-clientesj tbody img{
+    width: 40px;
 }
