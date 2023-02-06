@@ -448,10 +448,8 @@ header, .menu, .menusys {
     z-index: 2;
 }
 .modal-container{
-    width: 50%;
-    min-width: 400px;
     position: relative;
-    padding: 10px;
+    padding: 40px;
     background: white;
     border-radius: 10px;
 }
@@ -459,12 +457,29 @@ header, .menu, .menusys {
     position: absolute;
     top: 0;
     right: 0;
+    background: none;
+    border: none;
+    margin: 5px;
+    font-size: 25px;
+    color: gray;
+    transition: .3s ease-in-out;
+}
+.modalClose:hover{
+    color: rgb(41, 41, 41);
+    transition: .3s ease-in-out;
+    cursor: pointer;
 }
 /* Clientes Joly */
 .container-clientesj{
     padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background: var(--color5);
 }
 .add-clientB{
+    position: fixed;
+    right: 10px;
+    top: 50%;
     background: var(--color3);
     padding: 10px;
     border-radius: 10px;
@@ -479,5 +494,91 @@ header, .menu, .menusys {
 .add-clientB:hover{
     box-shadow: none;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+/* AñadirCliente */
+.form-add-client{
+    width: 300px;
+}
+.form-add-client form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.form-add-client input{
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.form-add-client input:focus{
+    border-color: var(--color3);
+}
+.registrarJ{
+    background: var(--color3);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.205);
+    transition: .3s ease-in-out;
+}
+.registrarJ:hover{
+    box-shadow: none;
+    transition: .3s ease-in-out;
+    color: gray;
+    cursor: pointer;
+}
+/* Table clientes Joly */
+.table-clientesj{
+    width: 80%;
+    margin-top: 30px;
+}
+.table-clientesj h1{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 20px;
+}
+.table-clientesj table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-clientesj thead{
+    background: var(--color4);
+}
+.table-clientesj th{
+    padding: 10px;
+}
+.table-clientesj td{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.table-clientesj button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.edit-client{
+    color: rgb(47, 44, 26, 0.8);
+    transition: .3s ease-in-out;
+}
+.edit-client:hover{
+    color: var(--color1);
+}
+.trash{
+    color: rgb(141, 0, 0, 0.8);
+    transition: .3s ease-in-out;
+}
+.trash:hover{
+    color: rgb(141, 0, 0);
+}
+.edit-client:hover, .trash:hover{
+    cursor: pointer;
+    text-shadow: none;
     transition: .3s ease-in-out;
 }

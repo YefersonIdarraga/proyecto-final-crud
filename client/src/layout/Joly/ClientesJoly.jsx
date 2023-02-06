@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import AñadirCliente from '../../components/JOLY/AñadirCliente'
 import HeaderJoly from '../../helper/HeaderJoly'
 import Modal from '../Modal'
 
@@ -14,20 +15,22 @@ const ClientesJoly = () => {
               <button className='add-clientB' onClick={()=> setMostrar(true)}>Añadir cliente</button>
             <Modal isOpen={mostrar} onClose={()=> setMostrar(false)}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, officia. Laborum provident asperiores magni eaque fugit libero quam incidunt consequuntur, illum dolores iure, quidem perferendis assumenda quis ea voluptatem voluptas.
+              <AñadirCliente />
             </p>
             </Modal>
           </div>
-          <div className="table-clientes">
+          <div className="table-clientesj">
+            <h1>Clientes Joly</h1>
             <table>
               <thead>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>Nombre</th>
+                <th>Documento</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Barrio</th>
+                <th>Dirección</th>
+                <th>Foto</th>
                 <th></th>
               </thead>
               <tbody>
@@ -39,6 +42,10 @@ const ClientesJoly = () => {
                 <td></td>
                 <td></td>
                 <td></td>
+                <td>
+                  <button className='trash'><i class="fa-solid fa-trash"></i></button>
+                  <button className='edit-client'><i class="fa-solid fa-user-pen"></i></button>
+                </td>
               </tbody>
             </table>
           </div>
