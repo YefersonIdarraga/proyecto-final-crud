@@ -1,10 +1,11 @@
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-const urlClientes = 'http://localhost:3100/clientes'
 import HeaderJoly from '../../../helper/HeaderJoly'
+const urlClientes = 'http://localhost:3100/clientes'
 
-const AñadirCliente = () => {
+const AñadirClienteJ = () => {
+  // Crear
   const [documento, setDocumento] = useState("")
   const [nombre, setNombre] = useState("")
   const [apellido, setApellido] = useState("")
@@ -75,4 +76,4 @@ const AñadirCliente = () => {
   )
 }
 
-export default AñadirCliente
+export default AñadirClienteJ

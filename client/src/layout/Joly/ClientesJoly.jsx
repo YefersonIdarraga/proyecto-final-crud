@@ -60,7 +60,7 @@ const ClientesJoly = () => {
                   </td>
                   <td>
                     <button className='trash' onClick={() =>eliminarCliente(cliente.id)}><i class="fa-solid fa-trash"></i></button>
-                    <Link className='edit-client' to={`/editar-clientej/${cliente.id}`}><i class="fa-solid fa-user-pen"></i></Link>
+                    <Link className='edit-client' to={`/editar-clientej/${cliente.id}`}><i class="fa-solid fa-file-pen"></i></Link>
                   </td>
                 </tr> 
                 ))} 
