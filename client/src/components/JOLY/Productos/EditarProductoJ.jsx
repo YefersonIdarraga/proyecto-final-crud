@@ -41,6 +41,7 @@ const EditarProductoJ = () => {
   return (
     <section className='container-formClientJ'>
       <HeaderJoly />
+      <h1>Actualizar producto</h1>
     <section className='form-add-client'>
         <form action="" id='form-clientJ'>
           <div className='div-form'>   

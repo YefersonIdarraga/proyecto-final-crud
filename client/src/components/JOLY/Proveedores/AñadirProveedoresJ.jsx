@@ -31,6 +31,7 @@ const AñadirProveedoresJ = () => {
   return (
     <section className='container-formClientJ'>
       <HeaderJoly />
+      <h1>Agregar proveedor</h1>
     <section className='form-add-client'>
         <form action="" id='form-clientJ'>
           <div className='div-form'>   

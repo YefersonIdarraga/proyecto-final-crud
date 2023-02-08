@@ -501,8 +501,17 @@ header, .menu, .menusys {
 /* AñadirCliente Joly */
 .container-formClientJ{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: var(--color5);
+    padding-bottom: 50px;
+}
+.container-formClientJ h1{
+    padding-top: 100px;
+    left: 40%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 .form-add-client{
     width: 100%;
@@ -514,7 +523,7 @@ header, .menu, .menusys {
 .form-add-client form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     width: 40%;
 }
 .div-form{
@@ -523,7 +532,7 @@ header, .menu, .menusys {
     align-items: center;
 }
 .inputJ{
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     font-size: 17px;
     outline: none;
@@ -539,11 +548,9 @@ header, .menu, .menusys {
     color: rgb(155, 0, 0);
     font-size: 20px;
 }
-.incorrecto{
-    background-color: red;
-}
-.correcto{
-    background-color: green;
+.estado{
+    color: rgb(155, 0, 0);
+    font-size: 14px;
 }
 .form-add-client input:focus{
     border-color: var(--color3);
