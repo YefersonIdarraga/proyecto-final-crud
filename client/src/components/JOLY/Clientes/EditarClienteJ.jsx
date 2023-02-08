@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import HeaderJoly from '../../../helper/HeaderJoly'
 const urlClientes = 'http://localhost:3100/clientes'
 
-const EditarCliente = () => {
+const EditarClienteJ = () => {
   const [documento, setDocumento] = useState("")
   const [nombre, setNombre] = useState("")
   const [apellido, setApellido] = useState("")
@@ -92,4 +92,4 @@ const EditarCliente = () => {
   )
 }
 
-export default EditarCliente
+export default EditarClienteJ
