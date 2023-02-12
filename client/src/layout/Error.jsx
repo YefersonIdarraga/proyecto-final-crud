@@ -1,9 +1,16 @@
 import React from 'react'
+import HeaderJoly from '../helper/HeaderJoly'
 
 const Error = () => {
   return (
     <section>
-        <h1>ERROR 404</h1>
+      <HeaderJoly />
+      <section className='error404'>
+          <div>
+            <h1>ERROR 404</h1>
+            <p>Page not Found</p>
+          </div>
+      </section>
     </section>
   )
 }
