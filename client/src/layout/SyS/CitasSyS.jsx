@@ -25,11 +25,11 @@ const CitasSyS = () => {
   return (
     <section>
         <HeaderSyS />
-        <div className='container-clientesj'>
+        <div className='container-clientesj container-sys'>
           <div className='add-client'>
               <Link className='add-clientB' to={'/añadir-citas'}>Añadir citas</Link>
           </div>
-          <div className="table-clientesj">
+          <div className="table-clientesj table-clientess">
             <h1>Citas SyS</h1>
             <table>
               <thead>

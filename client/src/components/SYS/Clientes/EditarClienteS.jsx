@@ -181,7 +181,7 @@ const EditarClienteS = () => {
     setFoto(res.data.foto);
   };
   return (
-    <section className="container-formClientJ">
+    <section className="container-formClientJ container-sys">
       <HeaderSyS />
       <h1>Actualizar cliente</h1>
       <section className="form-add-client">

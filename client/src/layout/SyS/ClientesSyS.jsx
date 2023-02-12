@@ -24,11 +24,11 @@ const ClientesSyS = () => {
   return (
     <section>
         <HeaderSyS />
-        <div className='container-clientesj'>
+        <div className='container-clientesj container-sys'>
           <div className='add-client'>
               <Link className='add-clientB' to={'/añadir-clientesys'}>Añadir cliente</Link>
           </div>
-          <div className="table-clientesj">
+          <div className="table-clientesj table-clientess">
             <h1>Clientes SyS</h1>
             <table>
               <thead>

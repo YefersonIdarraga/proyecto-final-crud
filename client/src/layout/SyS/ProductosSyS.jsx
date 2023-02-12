@@ -25,11 +25,11 @@ const ProductosSyS = () => {
   return (
     <section>
         <HeaderSyS />
-        <div className='container-clientesj'>
+        <div className='container-clientesj container-sys'>
           <div className='add-client'>
               <Link className='add-clientB' to={'/añadir-producto'}>Añadir producto</Link>
           </div>
-          <div className="table-clientesj">
+          <div className="table-clientesj table-clientess">
             <h1>Productos SYS</h1>
             <table>
               <thead>
@@ -49,7 +49,9 @@ const ProductosSyS = () => {
                   <td>{producto.descripcion}</td>
                   <td>{producto.valor}</td>
                   <td>{producto.cantidad}</td>
-                  <td>{producto.imagenproducto}</td>
+                  <td>
+                    <img src={`${producto.imagenproducto}`} alt="Foto" />
+                  </td>
                   <td>
                     <button className='trash' onClick={() =>eliminarProducto(producto.id)}><i class="fa-solid fa-trash"></i></button>
                     <Link className='edit-client' to={`/editar-producto/${producto.id}`}><i class="fa-solid fa-file-pen"></i></Link>

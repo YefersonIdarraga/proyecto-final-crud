@@ -450,39 +450,6 @@ header, .menu, .menusys {
 .separadorsys{
     background: var(---color4);
 }
-/* Modal */
-.modal{
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    place-items: center;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-.modal-container{
-    position: relative;
-    padding: 40px;
-    background: white;
-    border-radius: 10px;
-}
-.modalClose{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    border: none;
-    margin: 5px;
-    font-size: 25px;
-    color: gray;
-    transition: .3s ease-in-out;
-}
-.modalClose:hover{
-    color: rgb(41, 41, 41);
-    transition: .3s ease-in-out;
-    cursor: pointer;
-}
 /* Clientes Joly */
 .container-clientesj{
     padding-top: 60px;
@@ -623,6 +590,9 @@ header, .menu, .menusys {
 }
 .table-clientesj thead{
     background: var(--color4);
+}
+.table-clientess thead{
+    background: var(---color2);
 }
 .table-clientesj th{
     padding: 10px;

@@ -69,7 +69,7 @@ const EditarCitas = () =>
           est_des.textContent = "";
         } else {
           setVdes(false);
-          est_des.textContent = "Se permiten numeros, y caracteres especiales.";
+          est_des.textContent = "Se permiten letras.";
         }
         break;
         case "foto":
@@ -144,7 +144,7 @@ const EditarCitas = () =>
       
     }
     return (
-        <section className="container-formClientJ">
+        <section className="container-formClientJ container-sys">
           <HeaderSyS />
           <h1>Editar Citas SyS</h1>
           <section className="form-add-client">
@@ -258,7 +258,7 @@ const EditarCitas = () =>
                 id="registrar"
                 className="registrarJ"
                 type="submit"
-                value="Registrar"
+                value="Actualizar cita"
                 onClick={actualizarCitas}
               />
             </form>

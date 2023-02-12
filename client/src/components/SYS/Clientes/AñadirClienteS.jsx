@@ -62,7 +62,7 @@ const AñadirClienteS = () => {
         } else {
           setVnom(false);
           est_nom.textContent =
-            "Solo se permiten letras, guion y guion bajo; minimo 4 y maximo 20 caracteres.";
+            "Solo se permiten letras.";
         }
         break;
       case "apellido":
@@ -167,7 +167,7 @@ const AñadirClienteS = () => {
     }
   };
   return (
-    <section className="container-formClientJ">
+    <section className="container-formClientJ container-sys">
       <HeaderSyS />
       <h1>Añadir Cliente SyS</h1>
       <section className="form-add-client">
