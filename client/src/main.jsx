@@ -19,6 +19,15 @@ import AñadirProductoJ from './components/JOLY/Productos/AñadirProductoJ'
 import EditarProductoJ from './components/JOLY/Productos/EditarProductoJ'
 import AñadirProveedoresJ from './components/JOLY/Proveedores/AñadirProveedoresJ'
 import EditarProveedoresJ from './components/JOLY/Proveedores/EditarProveedoresJ'
+import AñadirClienteS from './components/SYS/Clientes/AñadirClienteS'
+import EditarClienteS from './components/SYS/Clientes/EditarClienteS'
+import AñadirCitas from './components/SYS/Citas/AñadirCitas'
+import EditarCitas from './components/SYS/Citas/EditarCitas'
+import AñadirProductoS from './components/SYS/productos/AñadirProductoS'
+import EditarProductoS from './components/SYS/productos/EditarProductoS'
+
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>
@@ -26,6 +35,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/' element={<Home />} errorElement={<Error />}></Route>
       <Route path='/home-sys' element={<HomeSyS />} errorElement={<Error />}></Route>
       <Route path='/clientes-sys' element={<ClientesSyS />} errorElement={<Error />}></Route>
+      <Route path='/editar-clientesys/:id' element={<EditarClienteS />} errorElement={<Error />}></Route>
+      <Route path='/añadir-clientesys/' element={<AñadirClienteS />} errorElement={<Error />}></Route>
+      <Route path='/añadir-citas/' element={<AñadirCitas />} errorElement={<Error />}></Route>
+      <Route path='/editar-cita/:id' element={<EditarCitas />} errorElement={<Error />}></Route>
       <Route path='/citas-sys' element={<CitasSyS />} errorElement={<Error />}></Route>
       <Route path='/productos-sys' element={<ProductosSyS />} errorElement={<Error />}></Route>
       <Route path='/home-joly' element={<HomeJoly />} errorElement={<Error />}></Route>
@@ -38,6 +51,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/proveedores-joly' element={<ProveedoresJoly />} errorElement={<Error />}></Route>
       <Route path='/añadir-proveedorj' element={<AñadirProveedoresJ />} errorElement={<Error />}></Route>
       <Route path='/editar-proveedorj/:id' element={<EditarProveedoresJ />} errorElement={<Error />}></Route>
+      <Route path='/añadir-producto' element={<AñadirProductoS />} errorElement={<Error />}></Route>
+      <Route path='/editar-producto/:id' element={<EditarProductoS />} errorElement={<Error />}></Route>
+      <Route path='*' element={<Error />} errorElement={<Error />}></Route>
+      
     </Routes>
   </HashRouter>
 )
