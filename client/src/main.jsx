@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import {HashRouter, Route, Routes} from 'react-router-dom'
 import Error from './layout/Error'
@@ -32,29 +31,28 @@ import EditarProductoS from './components/SYS/productos/EditarProductoS'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>
     <Routes>
-      <Route path='/' element={<Home />} errorElement={<Error />}></Route>
-      <Route path='/home-sys' element={<HomeSyS />} errorElement={<Error />}></Route>
-      <Route path='/clientes-sys' element={<ClientesSyS />} errorElement={<Error />}></Route>
-      <Route path='/editar-clientesys/:id' element={<EditarClienteS />} errorElement={<Error />}></Route>
-      <Route path='/añadir-clientesys/' element={<AñadirClienteS />} errorElement={<Error />}></Route>
-      <Route path='/añadir-citas/' element={<AñadirCitas />} errorElement={<Error />}></Route>
-      <Route path='/editar-cita/:id' element={<EditarCitas />} errorElement={<Error />}></Route>
-      <Route path='/citas-sys' element={<CitasSyS />} errorElement={<Error />}></Route>
-      <Route path='/productos-sys' element={<ProductosSyS />} errorElement={<Error />}></Route>
-      <Route path='/home-joly' element={<HomeJoly />} errorElement={<Error />}></Route>
-      <Route path='/clientes-joly' element={<ClientesJoly />} errorElement={<Error />}></Route>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/home-sys' element={<HomeSyS />}></Route>
+      <Route path='/clientes-sys' element={<ClientesSyS />}></Route>
+      <Route path='/editar-clientesys/:id' element={<EditarClienteS />}></Route>
+      <Route path='/añadir-clientesys/' element={<AñadirClienteS />}></Route>
+      <Route path='/añadir-citas/' element={<AñadirCitas />}></Route>
+      <Route path='/editar-cita/:id' element={<EditarCitas />}></Route>
+      <Route path='/citas-sys' element={<CitasSyS />}></Route>
+      <Route path='/productos-sys' element={<ProductosSyS />}></Route>
+      <Route path='/home-joly' element={<HomeJoly />}></Route>
+      <Route path='/clientes-joly' element={<ClientesJoly />}></Route>
       <Route path='/añadir-clientej' element={<AñadirClienteJ />}></Route>
       <Route path='/editar-clientej/:id' element={<EditarCliente />}></Route>
-      <Route path='/productos-joly' element={<ProductosJoly />} errorElement={<Error />}></Route>
-      <Route path='/añadir-productoj' element={<AñadirProductoJ />} errorElement={<Error />}></Route>
-      <Route path='/editar-productoj/:id' element={<EditarProductoJ />} errorElement={<Error />}></Route>
-      <Route path='/proveedores-joly' element={<ProveedoresJoly />} errorElement={<Error />}></Route>
-      <Route path='/añadir-proveedorj' element={<AñadirProveedoresJ />} errorElement={<Error />}></Route>
-      <Route path='/editar-proveedorj/:id' element={<EditarProveedoresJ />} errorElement={<Error />}></Route>
-      <Route path='/añadir-producto' element={<AñadirProductoS />} errorElement={<Error />}></Route>
-      <Route path='/editar-producto/:id' element={<EditarProductoS />} errorElement={<Error />}></Route>
-      <Route path='*' element={<Error />} errorElement={<Error />}></Route>
-      
+      <Route path='/productos-joly' element={<ProductosJoly />}></Route>
+      <Route path='/añadir-productoj' element={<AñadirProductoJ />}></Route>
+      <Route path='/editar-productoj/:id' element={<EditarProductoJ />}></Route>
+      <Route path='/proveedores-joly' element={<ProveedoresJoly />}></Route>
+      <Route path='/añadir-proveedorj' element={<AñadirProveedoresJ />}></Route>
+      <Route path='/editar-proveedorj/:id' element={<EditarProveedoresJ />}></Route>
+      <Route path='/añadir-producto' element={<AñadirProductoS />}></Route>
+      <Route path='/editar-producto/:id' element={<EditarProductoS />}></Route>
+      <Route path='*' element={<Error />}></Route>
     </Routes>
   </HashRouter>
 )

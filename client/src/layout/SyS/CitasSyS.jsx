@@ -1,15 +1,14 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import HeaderSyS from '../../helper/HeaderSyS'
+import HeaderSyS from '../../helper/HeaderSyS.jsx'
+
 const urlCitas = 'http://localhost:3101/citas'
 
-
-
-
 const CitasSyS = () => {
-  const [citas, setCitas] = useState([])
 
+  const [citas, setCitas] = useState([])
+  
   useEffect(() =>{
     mostrarCitas()
   }, [])

@@ -15,7 +15,7 @@ const Producto = dataBase.define('productos', {
     type: Sequelize.INTEGER
   },
   fechaVencimiento: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   }
 })
 

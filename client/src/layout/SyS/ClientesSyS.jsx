@@ -2,10 +2,8 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import HeaderSyS from '../../helper/HeaderSyS'
+
 const urlClientes = 'http://localhost:3101/clientes'
-
-
-
 
 const ClientesSyS = () => {
   const [clientes, setClientes] = useState([])

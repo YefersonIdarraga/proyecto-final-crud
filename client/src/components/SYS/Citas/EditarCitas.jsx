@@ -117,7 +117,6 @@ const EditarCitas = () =>
         descripcionServicio,
         imgCliente,
         direccionCliente,
-    
     }
     if ( !letras.test(nombresys.value, lugarsys.value , descripcionsys.value) ||
     !letraNum.test(direccionsys.value , fechasys.value) ||
@@ -128,7 +127,8 @@ const EditarCitas = () =>
         await axios.put(`${urlCitas}/${id}`, cita)
         navigate("/citas-sys")
       }
-  
+    }
+    
     useEffect(() => {
       listarCita()
     }, [])
@@ -265,7 +265,6 @@ const EditarCitas = () =>
           </section>
         </section>
       );
-    }
 }
 
 export default EditarCitas
